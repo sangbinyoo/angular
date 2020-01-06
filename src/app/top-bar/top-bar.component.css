@@ -1,0 +1,58 @@
+.top-bar{
+  display: block;
+  height: 64px;
+  background-color: #1976d2;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.left{
+  float: left;
+}
+.right{
+  padding: auto;
+  float: right;
+  line-height: 64px;
+}
+li {
+ color: aliceblue;
+ margin: auto;
+
+}
+ul {
+  display: flex;
+  width: 600px;
+}
+input{
+  border-width: 0px;
+  border-radius: 20px;
+  vertical-align: middle;
+  width: 200px;
+  height: 30px;
+  padding-left: 10px;
+}
+input:hover{
+  width: 300px;
+  transition-duration: 1s;
+}
+.twitter, .github{
+  float: right;
+  width: 40px;
+  margin: 0 10px 0 10px;
+}
+.twitter>*, .github>*{
+  vertical-align: middle;
+  fill: white;
+}
+a{
+  color: aliceblue;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.github{
+  line-height: 59px;
+}
+.twitter{
+  line-height: 68px;
+}

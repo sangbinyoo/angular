@@ -1,0 +1,17 @@
+li:hover{
+  background-color: lightgray;
+  transition-duration: 0.5s;
+  color: #1976d2;
+}
+ul{
+  padding-left: 10px;
+  margin: 0;
+}
+li{
+  padding: 5px;
+}
+.scroll-list{
+  width: 265px;
+  height: 100%;
+  box-shadow: 6px 0 6px rgba(0,0,0,.1);
+}

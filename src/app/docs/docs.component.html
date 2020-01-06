@@ -1,0 +1,6 @@
+<div class="scroll-view">
+  <app-scroll-list (listClicked)="selectedDoc($event)"></app-scroll-list>
+</div>
+<div class="list-view">
+  <app-view-area [select]="docId"></app-view-area>
+</div>

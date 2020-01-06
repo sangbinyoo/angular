@@ -1,0 +1,11 @@
+.scroll-view{
+  position: fixed;
+  top: 64px;
+  height: 100%;
+
+}
+.list-view{
+  margin-left: 265px;
+  padding: 20px;
+  height: 100%;
+}

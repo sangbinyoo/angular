@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+ul{
+  list-style-type: none;
+}
+div{
+  margin: 0;
+  padding: 0;
+}
+li:hover{
+  text-shadow: 0 0 5px #fff;
+}
+a {
+  text-decoration: none;
+}
+.main{
+  height: 100%;
+  width: 100%;
+  margin-top: 65px;
+  display: inline-block;
+}

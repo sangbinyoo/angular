@@ -1,0 +1,5 @@
+<div [ngClass]="{'loading-shadow' : isLoading}"> {{ doc.content }}</div>
+<div *ngIf="isLoading">
+  <div class="loader">Loading...</div>
+</div>
+
