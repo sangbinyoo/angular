@@ -20,7 +20,19 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 7, title: '개발환경 설정', content: '7번 문서 내용 ^^^^^^77777777777777777777777777777777777777777777'},
       { id: 8, title: '릴리즈 정보', content: '8번 문서 내용 &&&&&&&&&&&8888888888888888888888888888888888888888888888888888888888888'},
     ];
-   return {documents};
+   const tables = {
+     diskSizes: [
+       {size: '960 kB'}, {size: '312 kB'}, {size: '320 kB'}, {size: '216 kB'}, {size: '64 kB'}, {size: '376 kB'}, {size: '624 kB'},
+        {size: '760 kB'}, {size: '1296 kB'}, {size: '1296 kB'}, {size: '1296 kB'}, {size: '1296 kB'}, {size: '1304 kB'},
+        {size: '1304 kB'}, {size: '448 kB'}, {size: '536 kB'}, {size: '448 kB'}, {size: '720 kB'}, {size: '1024 kB'}, {size: '1032 kB'},
+        {size: '1160 kB'}, {size: '5104 kB'}, {size: '5488 kB'}, {size: '5488 kB'}, {size: '5488 kB'}, {size: '1304 kB'}, {size: '1304 kB'},
+         {size: '192 kB'}, {size: '784 kB'}, {size: '5136 kB'}, {size: '352 kB'}, {size: '5128 kB'}, {size: '1280 kB'}, {size: '720 kB'},
+        {size: '720 kB'}, {size: '520 kB'}, {size: '720 kB'}, {size: '720 kB'}, {size: '1888 kB'}, {size: '1888 kB'}, {size: '1888 kB'},
+        {size: '12 MB'}, {size: '8272 kB'}, {size: '40 MB'}, {size: '40 MB'}, {size: '1208 kB'}, {size: '1208 kB'}, {size: '2472 kB'},
+        {size: '2472 kB'}, {size: '880 kB'}, {size: '2472 kB'}, {size: '880 kB'}, {size: '880 kB'}, {size: '880 kB'}, {size: '880 kB'},
+        {size: '2472 kB'}, {size: '880 kB'}, {size: '432 kB'}, {size: '432 kB'}, {size: '32 Mb'}, {size: '52 mB'}, {size: '2 Kb'},
+         {size: '1 KB'}]};
+   return {documents, tables};
   }
 
   getId(documents: Document[]): number {

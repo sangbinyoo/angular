@@ -16,6 +16,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 
+import { AgGridModule } from 'ag-grid-angular';
+import 'ag-grid-enterprise';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +34,7 @@ import { InMemoryDataService } from './in-memory-data.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    AgGridModule.withComponents([]),
     // HttpClientInMemoryWebApiModule 모듈은 HTTP 요청을 가로채고 서버의 응답을 흉내냅니다.
     // 실제 서버가 준비되면 이 부분을 제거하면 됩니다.
     HttpClientInMemoryWebApiModule.forRoot(

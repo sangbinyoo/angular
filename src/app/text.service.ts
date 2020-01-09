@@ -39,6 +39,10 @@ export class TextService {
     );
   }
 
+  getTableData(): Observable<any> {
+    const urlt = `api/tables`;
+    return this.http.get<any>(urlt);
+  }
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
       console.error(error);

@@ -1,5 +1,6 @@
 .top-bar{
   display: block;
+  z-index: 10;
   height: 64px;
   background-color: #1976d2;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);

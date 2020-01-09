@@ -1,1 +1,9 @@
-<p>features works!</p>
+<ag-grid-angular
+  #agGrid
+  style="width: 100%; height: 400px;"
+  class="ag-theme-balham-dark"
+  [rowData]="rowData"
+  [gridOptions]="gridOptionss"
+>
+</ag-grid-angular>
+<button (click)="getSelectedRows()">Get Selected Rows</button>
